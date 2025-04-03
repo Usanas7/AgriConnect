@@ -1,38 +1,16 @@
 /** @type {import('next').NextConfig} */
-
-const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-
+const path = require("path");
 
 const nextConfig = {
   images: {
     domains: ["api.dicebear.com", "xsgames.co", "res.cloudinary.com"],
   },
   reactStrictMode: true,
-  plugins: [
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.join(
-            __dirname,
-            "./node_modules/pdfjs-dist/build/pdf.worker.min.js"
-          ),
-          to: path.join(__dirname, "dist"),
-        },
-      ],
-    }),
-  ],
-  entry: {
-    main: "./src/index.tsx",
-    "pdf.worker": path.join(
-      __dirname,
-      "./node_modules/pdfjs-dist/build/pdf.worker.min.js"
-    ),
+  webpack: (config) => {
+    config.plugins = config.plugins || [];
+    return config;
   },
-  output: {
-    path: path.join(__dirname, "dist"),
-    filename: "[name].bundle.js",
-  },
+  output: "standalone",
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;

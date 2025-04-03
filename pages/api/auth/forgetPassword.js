@@ -10,7 +10,7 @@ const schema = Joi.object({
 });
 
 
-export default async (req, res) => {
+const handler =  async (req, res) => {
     await ConnectDB();
 
     const { email, password} = req.body;
@@ -31,3 +31,4 @@ export default async (req, res) => {
     }
 }
 
+export default handler;

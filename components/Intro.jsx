@@ -93,7 +93,7 @@ export default function Intro() {
               className={styles.title}
             >
               Find Your Perfect Job with{" "}
-              <span className={styles.highlight}>JobSewa</span>
+              <span className={styles.highlight}>AgriConnect</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 50 }}
@@ -101,8 +101,7 @@ export default function Intro() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className={styles.description}
             >
-              Connecting thousands of job seekers with their dream careers
-              daily.
+              Find Agricultural Jobs Easily with AgriConnect.
             </motion.p>
 
             <motion.div
@@ -118,7 +117,7 @@ export default function Intro() {
                   onKeyPress={handleKeyPress}
                   value={search}
                   type="text"
-                  placeholder="Search job categories (e.g., electrician)"
+                  placeholder="Search job categories (e.g., Agronomist)"
                   className={styles.input}
                 />
                 {search && (
@@ -145,7 +144,7 @@ export default function Intro() {
               className={styles.tagsContainer}
             >
               <span className={styles.tagsTitle}>Popular Tags:</span>
-              {["Electrician", "Labourer", "Driver", "Plumber"].map((tag) => (
+              {["Farm Manager", "Agronomist", "Soil scientist", "Farm cleaner"].map((tag) => (
                 <motion.span
                   key={tag}
                   whileHover={{ scale: 1.1 }}
@@ -237,10 +236,10 @@ export default function Intro() {
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>
           <div className={styles.footerSection}>
-            <h3>JobSewa</h3>
+            <h3>AgriConnect</h3>
             <img
-              src="/Jobsewa_logo.png"
-              alt="JobSewa Logo"
+              src="/AgriConnect_logo.png"
+              alt="AgriConnect Logo"
               className={styles.logo}
             />
           </div>

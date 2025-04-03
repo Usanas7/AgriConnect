@@ -3,7 +3,7 @@ import Job from '@/models/Job';
 
 
 
-export default async (req, res) => {
+const handler = async (req, res) => {
     await ConnectDB();
     const { method } = req;
     switch (method) {
@@ -33,3 +33,5 @@ const getSpecifiedJob = async (req, res) => {
         return res.status(403).json({ success: false, message: "Something Went Wrong Please Retry login !" })
     }
 }
+
+export default handler;

@@ -22,7 +22,7 @@ export const config = {
 };
 
 
-export default async (req, res) => {
+const handler = async (req, res) => {
     await ConnectDB();
     const { method } = req;
     switch (method) {
@@ -111,3 +111,4 @@ const applyToJob =  async (req, res) => {
 
 }
 
+export default handler;

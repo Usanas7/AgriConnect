@@ -5,7 +5,7 @@ import AppliedJob from '@/models/ApplyJob';
 
 
 
-export default async (req, res) => {
+const handler = async (req, res) => {
     await ConnectDB();
     const { method } = req;
     switch (method) {
@@ -39,3 +39,5 @@ const change_application_status =  async (req, res) => {
         return res.status(403).json({ success: false, message: "Something Went Wrong Please Retry login !" })
     }
 }
+
+export default handler;

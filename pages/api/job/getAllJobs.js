@@ -4,7 +4,7 @@ import Job from '@/models/Job';
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default async (req, res) => {
+const handler = async (req, res) => {
     await ConnectDB();
     const { method } = req;
     switch (method) {
@@ -28,3 +28,5 @@ const getAllJobs = async (req, res) => {
         return res.status(500).json({ success: false, message: "Something Went Wrong Please Retry login  !" })
     }
 }
+
+export default handler;

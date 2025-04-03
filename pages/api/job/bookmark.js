@@ -10,7 +10,7 @@ const schema = Joi.object({
 });
 
 
-export default async (req, res) => {
+const handler = async (req, res) => {
     await ConnectDB();
     switch (req.method) {
         case "POST":
@@ -84,3 +84,5 @@ export const delete_bookmark_job = async (req, res) => {
         return res.status(500).json({ success: false, message: "Something Went Wrong Please Retry Later !" })
     }
 }
+
+export default handler;

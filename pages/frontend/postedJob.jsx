@@ -48,9 +48,14 @@ function PostedJobs() {
     }
   }, [id, router]);
 
+  const fetchJobs = async () => {
+    if (!id || !Cookies.get("token")) return null;
+    return get_my_posted_job(id);
+  };
+
   const { data, error, isLoading } = useSWR(
     id && Cookies.get("token") ? "/getMyPostedJobs" : null,
-    () => get_my_posted_job(id)
+    fetchJobs
   );
 
   useEffect(() => {
@@ -124,7 +129,7 @@ function PostedJobs() {
                     transition={{ delay: 0.2 }}
                     className={styles.noJobsMessage}
                   >
-                    You haven't posted any jobs yet.
+                    You haven&apos;t posted any jobs yet.
                   </motion.p>
                 )}
               </motion.div>
