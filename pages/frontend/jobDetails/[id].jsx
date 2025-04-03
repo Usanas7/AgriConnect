@@ -156,7 +156,7 @@ export default function JobDetails() {
                       Salary{" "}
                     </p>
                     <p className=" text-sm text-gray-800 mx-1">
-                      ₹ {JobDetails?.salary}{" "}
+                      rwf {JobDetails?.salary}{" "}
                     </p>
                   </div>
                 </div>

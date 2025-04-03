@@ -36,7 +36,7 @@ export default function JobsCard({ job, posted }) {
           <BsDot className="text-4xl font-extrabold text-sky-700" />
           <h1 className="text-lg text-gray-900 w-20">Salary :</h1>
           <p className="text-base font-semibold">
-            &nbsp;&nbsp;&nbsp;₹{job?.salary}/ month
+            &nbsp;&nbsp;&nbsp;rwf{job?.salary}/ month
           </p>
         </div>
         <div className="flex px-2 py-2 items-center justify-center">

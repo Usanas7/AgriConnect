@@ -39,7 +39,7 @@ export default function SavedJobDataTable() {
     },
     {
       name: "Job Salary ",
-      selector: (row) => "₹" + row?.job?.salary,
+      selector: (row) => "rwf" + row?.job?.salary,
     },
     {
       name: "Action",
