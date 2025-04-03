@@ -266,14 +266,14 @@ export default function Intro() {
             <h3>Connect with Us</h3>
             <div className={styles.socialLinks}>
               <a
-                href="https://x.com/devmangrani"
+                href="https://x.com/Usanase"
                 target="_blank"
                 className={styles.iconLink}
               >
                 <FiTwitter size={22} />
               </a>
               <a
-                href="https://www.linkedin.com/in/dev-mangrani/"
+                href="https://www.linkedin.com/in/Usanase/"
                 target="_blank"
                 className={styles.iconLink}
               >
@@ -291,7 +291,7 @@ export default function Intro() {
         </div>
 
         <div className={styles.bottomFooter}>
-          <p>&copy; {new Date().getFullYear()} JobSewa. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AgriConnect. All rights reserved.</p>
         </div>
       </footer>
     </div>
