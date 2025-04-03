@@ -238,7 +238,7 @@ export default function Intro() {
           <div className={styles.footerSection}>
             <h3>AgriConnect</h3>
             <img
-              src="/AgriConnect_logo.png"
+              src="/AgriConnect_logo.jpg"
               alt="AgriConnect Logo"
               className={styles.logo}
             />

@@ -67,7 +67,7 @@ export default function NavBar() {
     <div className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.logo}>
         <Link href="/">
-          <img src="/AgriConnect_logo.png" alt="AgriConnect Logo" className={styles.logoImg} />
+          <img src="/AgriConnect_logo.jpg" alt="AgriConnect Logo" className={styles.logoImg} />
         </Link>
       </div>
 
