@@ -20,7 +20,7 @@ AgriConnect is a web-based platform designed to connect job seekers with agricul
 
 1. **Clone the Repository:**
    ```bash
- git clone https://github.com/Usanas7/AgriConnect.git
+   git clone https://github.com/Usanas7/AgriConnect.git
    ```
 
 2. **Install dependencies:**
@@ -29,7 +29,7 @@ AgriConnect is a web-based platform designed to connect job seekers with agricul
    ```
 
 3. **Set Environment Variables:**
-   Create a `.env` file with:
+   Create a .env file with:
    ```
    DB_URI=your_mongodb_url
    JWT_SECREAT=your_custom_jwt_secret
@@ -42,6 +42,7 @@ AgriConnect is a web-based platform designed to connect job seekers with agricul
    ```bash
    at "http://localhost:3000"
    ```
+   
    ## Technologies Used
 
 - Frontend & Backend: React.js, JavaScript, NextJS
